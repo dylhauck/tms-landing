@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="640" viewBox="0 0 64 64" role="img" aria-label="FreightFlow">
+  <defs>
+    <linearGradient id="g" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#69a0ff"/>
+      <stop offset="1" stop-color="#0054e6"/>
+    </linearGradient>
+  </defs>
+  <rect x="6" y="10" width="52" height="36" rx="6" fill="url(#g)"/>
+  <path d="M10 42h44a4 4 0 0 1 4 4v2H6v-2a4 4 0 0 1 4-4z" fill="#0d1a33"/>
+  <circle cx="18" cy="50" r="4" fill="#e7ecf5"/>
+  <circle cx="46" cy="50" r="4" fill="#e7ecf5"/>
+  <path d="M14 18h24a2 2 0 0 1 2 2v10H14z" fill="#ffffff" opacity=".9"/>
+</svg>
