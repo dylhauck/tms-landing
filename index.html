@@ -1,1 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FreightFlow TMS — Move freight with confidence</title>
+  <meta name="description" content="A modern Transportation Management System to rate, book, track, and analyze shipments." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- You can swap fonts or remove these two lines if you want zero external calls -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%230060FF' d='M4 10h20a4 4 0 014 4v8a4 4 0 01-4 4H6a4 4 0 01-4-4v-8a4 4 0 014-4z'/%3E%3Cpath fill='%23fff' d='M7 15h10a2 2 0 012 2v5H7v-7z'/%3E%3C/svg%3E">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <img src="./assets/logo.svg" alt="" class="brand-mark" />
+        <span class="brand-name">FreightFlow<span class="brand-dot">•</span>TMS</span>
+      </a>
 
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#trust">Trust & Security</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="cta-group">
+        <button class="btn btn-ghost" data-open="login">Log in</button>
+        <a class="btn btn-primary" href="#get-started">Get started</a>
+      </div>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Run your logistics on one modern TMS.</h1>
+        <p class="lead">
+          Rate LTL/FTL, dispatch faster, track in real-time, and invoice without drama.
+          Built for carriers, brokers, and shippers who want speed and accuracy.
+        </p>
+
+        <ul class="hero-bullets" role="list">
+          <li>Instant rating & lane-specific tariffs</li>
+          <li>Smart deficit/threshold handling</li>
+          <li>Customer portals & role-based access</li>
+        </ul>
+
+        <div class="hero-cta">
+          <a class="btn btn-primary btn-lg" href="#get-started">Start free</a>
+          <a class="btn btn-ghost btn-lg" href="#demo">Book a demo</a>
+        </div>
+
+        <div class="trust-badges" id="trust">
+          <div class="badge">SOC 2-ready</div>
+          <div class="divider" aria-hidden="true"></div>
+          <div class="badge">99.95% uptime</div>
+          <div class="divider" aria-hidden="true"></div>
+          <div class="badge">US/EU data residency</div>
+        </div>
+      </div>
+
+      <div class="hero-pane">
+        <div class="card auth-card" role="region" aria-label="Quick access">
+          <h2 class="card-title">Quick access</h2>
+          <form class="stack-sm" id="quick-login" novalidate>
+            <label class="field">
+              <span>Work email</span>
+              <input type="email" name="email" placeholder="you@company.com" autocomplete="username" required />
+              <small class="error" aria-live="polite"></small>
+            </label>
+
+            <label class="field">
+              <span>Password</span>
+              <input type="password" name="password" placeholder="••••••••" autocomplete="current-password" required minlength="8" />
+              <small class="error" aria-live="polite"></small>
+            </label>
+
+            <button class="btn btn-primary btn-block" type="submit">Log in</button>
+            <button class="btn btn-ghost btn-block" type="button" data-open="signup">Create an account</button>
+
+            <div class="hint">
+              By continuing you agree to our <a href="#">Terms</a> and <a href="#">Privacy</a>.
+            </div>
+          </form>
+        </div>
+
+        <img class="hero-illustration" src="./assets/hero-illustration.svg" alt="Shipment cards, map pins, and analytics widgets" />
+      </div>
+    </div>
+    <div class="hero-gradient" aria-hidden="true"></div>
+  </section>
+
+  <!-- Feature strip -->
+  <section class="feature-strip" id="features">
+    <div class="container strip-grid">
+      <article class="strip-item">
+        <h3>Rate & Quote</h3>
+        <p>Lane-specific $/cwt, minimums, and automatic deficit thresholds baked in.</p>
+      </article>
+      <article class="strip-item">
+        <h3>Dispatch</h3>
+        <p>Assign carriers in one click, push stops to drivers, capture PODs instantly.</p>
+      </article>
+      <article class="strip-item">
+        <h3>Track</h3>
+        <p>Live statuses and ETA signals from ELD, app pings, and carrier APIs.</p>
+      </article>
+      <article class="strip-item">
+        <h3>Bill</h3>
+        <p>Clean docs to AR/AP, audit accessorials, and reconcile faster.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="how" id="how-it-works">
+    <div class="container">
+      <h2>How it works</h2>
+      <ol class="steps">
+        <li><span class="step-num">1</span>Connect carriers and import your tariffs.</li>
+        <li><span class="step-num">2</span>Configure customers, roles, and permissions.</li>
+        <li><span class="step-num">3</span>Start rating, booking, and tracking shipments.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand brand-footer" href="#">
+          <img src="./assets/logo.svg" alt="" class="brand-mark" />
+          <span class="brand-name">FreightFlow<span class="brand-dot">•</span>TMS</span>
+        </a>
+        <p class="muted">Modern TMS for shippers, brokers, and carriers.</p>
+      </div>
+
+      <nav aria-label="Footer">
+        <span class="footer-label">Product</span>
+        <a href="#features">Features</a>
+        <a href="#demo">Demo</a>
+        <a href="#">Pricing</a>
+      </nav>
+
+      <nav aria-label="Company">
+        <span class="footer-label">Company</span>
+        <a href="#">About</a>
+        <a href="#">Security</a>
+        <a href="#">Status</a>
+      </nav>
+
+      <nav aria-label="Legal">
+        <span class="footer-label">Legal</span>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">DPA</a>
+      </nav>
+    </div>
+
+    <div class="container footer-bottom">
+      <small>© <span id="year"></span> FreightFlow TMS. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <!-- Modals (login/signup placeholders) -->
+  <dialog class="modal" id="modal-login" aria-labelledby="modal-login-title">
+    <form method="dialog" class="modal-inner">
+      <h3 id="modal-login-title">Log in</h3>
+      <p>Authentication flow goes here.</p>
+      <button class="btn btn-primary">Close</button>
+    </form>
+  </dialog>
+
+  <dialog class="modal" id="modal-signup" aria-labelledby="modal-signup-title">
+    <form method="dialog" class="modal-inner">
+      <h3 id="modal-signup-title">Create your account</h3>
+      <p>Signup flow goes here.</p>
+      <button class="btn btn-primary">Close</button>
+    </form>
+  </dialog>
+
+  <script src="./app.js"></script>
+</body>
+</html>
